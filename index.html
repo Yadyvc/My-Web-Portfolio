@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="shinobi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yadiel O. Valentín Cabán — Tulip Engineer &amp; Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Yadiel O. Valentín Cabán, Tulip Engineer and full-stack web developer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="chakraProgress" class="chakra-progress" aria-hidden="true"></div>
+
+  <div id="chakraPulse" class="chakra-pulse" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Yadiel Valentín Home">
+        <span class="hitai-ate" aria-hidden="true">
+          <svg width="46" height="22" viewBox="0 0 72 32" fill="none">
+            <defs>
+              <linearGradient id="metalPlateGrad" x1="0" y1="0" x2="72" y2="32" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#333A48"/>
+                <stop offset="50%" stop-color="#1D222B"/>
+                <stop offset="100%" stop-color="#2B313E"/>
+              </linearGradient>
+            </defs>
+            <rect x="1.5" y="2" width="69" height="28" rx="5" fill="url(#metalPlateGrad)" stroke="#4B5563" stroke-width="1.2"/>
+            <circle cx="8.5" cy="9.5" r="1.45" fill="#6B7280"/>
+            <circle cx="8.5" cy="16" r="1.45" fill="#6B7280"/>
+            <circle cx="8.5" cy="22.5" r="1.45" fill="#6B7280"/>
+            <circle cx="63.5" cy="9.5" r="1.45" fill="#6B7280"/>
+            <circle cx="63.5" cy="16" r="1.45" fill="#6B7280"/>
+            <circle cx="63.5" cy="22.5" r="1.45" fill="#6B7280"/>
+            <path class="konoha-symbol" d="M37.5 16.2C37.5 14.3 35.1 13.7 34 15.2C32.9 16.8 34.4 19.3 37 19C40.1 18.6 41.3 14.7 38.7 12.1C35.8 9.2 30.3 11.2 29.8 15.8C29.4 19.8 33 22.8 37.8 22.1L44.5 21.2M30.8 19.6L25.8 21.8L29.6 16.6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text"><span class="brand-bracket">[</span>Y. VALENTÍN<span class="brand-bracket">]</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#experience" data-i18n="nav_experience">Experience</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="cmdTrigger" class="ctrl-btn" aria-label="Open Command Palette">
+          <span>⌘</span>
+          <span class="kbd-hint">Ctrl + K</span>
+        </button>
+        <button id="langToggle" class="ctrl-btn" aria-label="Toggle Language">EN / ES</button>
+        <button id="modeToggle" class="ctrl-btn ctrl-btn-mode" aria-label="Toggle Visual Mode">
+          <svg class="shuriken-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 1L14.8 9.2L23 12L14.8 14.8L12 23L9.2 14.8L1 12L9.2 9.2L12 1ZM12 9.4A2.6 2.6 0 1 0 12 14.6A2.6 2.6 0 1 0 12 9.4Z"/>
+          </svg>
+          <span id="modeLabel">Shinobi</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+
+    <section class="hero">
+      <svg class="hero-seal-watermark" viewBox="0 0 220 220" fill="none" aria-hidden="true">
+        <circle cx="110" cy="110" r="102" stroke="#F97316" stroke-width="1" stroke-dasharray="4 6"/>
+        <circle cx="110" cy="110" r="82" stroke="#F97316" stroke-width="1.2"/>
+        <circle cx="110" cy="110" r="58" stroke="#F97316" stroke-width="0.9" stroke-dasharray="2 5"/>
+        <path d="M110 8V34M110 186V212M8 110H34M186 110H212M38 38L56 56M164 164L182 182M182 38L164 56M56 164L38 182" stroke="#F97316" stroke-width="1"/>
+        <path d="M114 110C114 104 106 102 103 107C100 113 105 121 113 120C123 119 127 106 119 98C109 88 92 95 90 109C89 122 101 132 117 130L137 126M94 121L78 128L90 112" stroke="#F97316" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+      <div class="hero-content">
+        <div class="hero-meta">
+          <span class="dossier-id" data-i18n-mode="hero_badge">// DOSSIER_ID: 2026-PR</span>
+          <span class="status-pill">
+            <span class="status-dot"></span>
+            <span data-i18n="hero_status">Open to Opportunities</span>
+          </span>
+        </div>
+
+        <h1 class="hero-name">Yadiel O. Valentín Cabán</h1>
+        <p class="hero-title" data-i18n="hero_title">Tulip Engineer &amp; Full-Stack Web Developer</p>
+        <p class="hero-summary" data-i18n="hero_summary">
+          Information Systems graduate working in digital manufacturing. Building compliant Electronic Batch Records (eBR) in Tulip for regulated biomedical production, alongside full-stack web applications with Node.js, Express, and PostgreSQL.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-i18n="btn_view_projects">View Projects</a>
+          <a href="https://github.com/Yadyvc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <button class="btn btn-secondary copy-email-btn" data-i18n="btn_copy_email">Copy Email</button>
+        </div>
+      </div>
+
+      <div class="bento-grid" aria-label="Quick Profile Highlights">
+        <div class="bento-card">
+          <div class="bento-header">
+            <span class="bento-label" data-i18n="bento1_label">Location &amp; Status</span>
+          </div>
+          <p class="bento-value">Añasco, Puerto Rico</p>
+          <div class="bento-meta-list">
+            <span data-i18n="bento1_lang">Bilingual (Spanish Native, English Intermediate)</span>
+            <span>📞 787-598-4826</span>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-header">
+            <span class="bento-label" data-i18n="bento2_label">Core Tech Stack</span>
+          </div>
+          <div class="bento-pills">
+            <span class="pill">JavaScript</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">Express</span>
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">Tulip Interfaces</span>
+            <span class="pill">SQL</span>
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">Git</span>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-header">
+            <span class="bento-label" data-i18n="bento3_label">Top Credential</span>
+          </div>
+          <p class="bento-value">Tulip Advanced App Certified Builder</p>
+          <div class="bento-meta-list">
+            <span data-i18n="bento3_deg">B.S. in Information Systems (UAA, May 2026)</span>
+            <span data-i18n="bento3_cert">AI Fundamentals 2026 Certification</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="section-divider">
+        <span class="kunai-divider" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12L13 8L10 12L13 16L21 12Z"/>
+            <path d="M10 12H5"/>
+            <circle cx="3.5" cy="12" r="1.5"/>
+          </svg>
+        </span>
+        <span class="section-tag">01</span>
+        <h2 class="section-heading" data-i18n-mode="sec_experience">Mission Log</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3 class="timeline-role" data-i18n="exp1_role">Tulip Engineer</h3>
+            <span class="timeline-date" data-i18n="exp1_date">July 2026 – Present</span>
+          </div>
+          <p class="timeline-org">Waters Corporation · Cayey, PR</p>
+          <ul class="timeline-bullets">
+            <li data-i18n="exp1_b1">Developed and deployed Electronic Batch Records (eBR) for purification and conjugation processes using Tulip low-code platform.</li>
+            <li data-i18n="exp1_b2">Implemented step verification, record history, and digital signatures on batch records converting 30+ page paper SOPs into digital apps.</li>
+            <li data-i18n="exp1_b3">Collaborated with quality teams to translate paper-based SOPs into compliant digital systems for regulated biomedical manufacturing.</li>
+            <li data-i18n="exp1_b4">Managed applications through the full development cycle (SDLC), from requirements to deployment.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3 class="timeline-role" data-i18n="exp2_role">Web Development Intern</h3>
+            <span class="timeline-date" data-i18n="exp2_date">Aug 2025 – Dec 2025</span>
+          </div>
+          <p class="timeline-org">Universidad Adventista de las Antillas · Mayagüez, PR</p>
+          <ul class="timeline-bullets">
+            <li data-i18n="exp2_b1">Maintained and updated university web content using WordPress CMS.</li>
+            <li data-i18n="exp2_b2">Managed databases and streamlined digital publishing workflows for internal communications.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-header">
+            <h3 class="timeline-role" data-i18n="exp3_role">Operations Assistant (Food Service)</h3>
+            <span class="timeline-date" data-i18n="exp3_date">Operations</span>
+          </div>
+          <p class="timeline-org" data-i18n="exp3_org">Various Establishments · Puerto Rico</p>
+          <ul class="timeline-bullets">
+            <li data-i18n="exp3_b1">Managed daily business purchasing and oversaw cash flow operations.</li>
+            <li data-i18n="exp3_b2">Delivered consistent customer service and maintained operational efficiency in high-pressure environments.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-divider">
+        <span class="kunai-divider" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12L13 8L10 12L13 16L21 12Z"/>
+            <path d="M10 12H5"/>
+            <circle cx="3.5" cy="12" r="1.5"/>
+          </svg>
+        </span>
+        <span class="section-tag">02</span>
+        <h2 class="section-heading" data-i18n-mode="sec_projects">Featured Missions</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div>
+            <div class="project-top">
+              <span class="rank-badge" data-i18n="rank_s">Rank S</span>
+              <span class="project-type-badge" data-i18n="proj1_type">Full-Stack</span>
+            </div>
+            <h3 class="project-title" data-i18n="proj1_title">DulceMomentos E-Commerce Platform</h3>
+            <p class="project-desc" data-i18n="proj1_desc">
+              Full-stack web app with customer storefront and admin dashboard. REST API built with Node.js &amp; Express, PostgreSQL deployed on Neon, RBAC for customer profiles, order status timelines, inventory adjustments, and SVG analytics dashboard.
+            </p>
+          </div>
+          <div class="project-footer">
+            <div class="bento-pills">
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">Neon</span>
+              <span class="pill">RBAC</span>
+              <span class="pill">SVG</span>
+            </div>
+            <a href="https://github.com/Yadyvc/uaa-proyecto-final" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span data-i18n="proj_view_repo">View Repository</span>
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <div class="project-top">
+              <span class="rank-badge" data-i18n="rank_a">Rank A</span>
+              <span class="project-type-badge" data-i18n="proj2_type">SaaS / API</span>
+            </div>
+            <h3 class="project-title" data-i18n="proj2_title">Ticketing System (In-Progress)</h3>
+            <p class="project-desc" data-i18n="proj2_desc">
+              SaaS ticketing platform built with Node.js, JavaScript, and PostgreSQL featuring a REST API and full CRUD workflows to track and resolve client support tickets.
+            </p>
+          </div>
+          <div class="project-footer">
+            <div class="bento-pills">
+              <span class="pill">Node.js</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">REST API</span>
+              <span class="pill">CRUD</span>
+            </div>
+            <a href="https://github.com/Yadyvc/SaaS-Project" target="_blank" rel="noopener noreferrer" class="project-link">
+              <span data-i18n="proj_view_repo">View Repository</span>
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <div class="project-top">
+              <span class="rank-badge" data-i18n="rank_b">Rank B</span>
+              <span class="project-type-badge" data-i18n="proj3_type">Analytics</span>
+            </div>
+            <h3 class="project-title" data-i18n="proj3_title">Financial Modeling Portfolio</h3>
+            <p class="project-desc" data-i18n="proj3_desc">
+              Interactive financial models in Microsoft Excel including loan calculators and amortization schedules, presented on a Google Sites portfolio.
+            </p>
+          </div>
+          <div class="project-footer">
+            <div class="bento-pills">
+              <span class="pill">Microsoft Excel</span>
+              <span class="pill">Financial Modeling</span>
+              <span class="pill">Amortization</span>
+              <span class="pill">Google Sites</span>
+            </div>
+            <span class="project-status-note" data-i18n="proj3_note">Presented on Google Sites Portfolio</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-divider">
+        <span class="kunai-divider" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12L13 8L10 12L13 16L21 12Z"/>
+            <path d="M10 12H5"/>
+            <circle cx="3.5" cy="12" r="1.5"/>
+          </svg>
+        </span>
+        <span class="section-tag">03</span>
+        <h2 class="section-heading" data-i18n-mode="sec_skills">Technical Affinity</h2>
+      </div>
+
+      <div class="skills-layout">
+        <div class="skills-categories">
+          <div class="skill-card">
+            <h3 class="skill-card-title" data-i18n="skill_cat_lang">Languages</h3>
+            <div class="bento-pills">
+              <span class="pill">JavaScript</span>
+              <span class="pill">SQL</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card-title" data-i18n="skill_cat_backend">Backend &amp; Data</h3>
+            <div class="bento-pills">
+              <span class="pill">Node.js</span>
+              <span class="pill">Express</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">MySQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card-title" data-i18n="skill_cat_tools">Platforms &amp; Tools</h3>
+            <div class="bento-pills">
+              <span class="pill">Tulip Interfaces</span>
+              <span class="pill">Git</span>
+              <span class="pill">GitHub</span>
+              <span class="pill">Render</span>
+              <span class="pill">WordPress</span>
+              <span class="pill">Excel</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-card-title" data-i18n="skill_cat_methods">Methodologies</h3>
+            <div class="bento-pills">
+              <span class="pill">SDLC</span>
+              <span class="pill">Process Mapping</span>
+              <span class="pill">Requirements Gathering</span>
+              <span class="pill">API Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="radar-card">
+          <span class="radar-title" data-i18n-mode="radar_title">Chakra / Technical Affinity Matrix</span>
+          <svg class="radar-svg" viewBox="0 0 320 300" role="img" aria-label="Technical Affinity 5-Axis Radar Chart">
+            <polygon class="radar-grid-poly" points="160,131.25 182.59,147.66 173.96,174.21 146.04,174.21 137.41,147.66" />
+            <polygon class="radar-grid-poly" points="160,107.5 205.17,140.32 187.92,193.43 132.08,193.43 114.83,140.32" />
+            <polygon class="radar-grid-poly" points="160,83.75 227.76,132.98 201.88,212.64 118.12,212.64 92.24,132.98" />
+            <polygon class="radar-grid-poly" points="160,60 250.35,125.64 215.84,231.86 104.16,231.86 69.65,125.64" />
+
+            <line class="radar-axis" x1="160" y1="155" x2="160" y2="60" />
+            <line class="radar-axis" x1="160" y1="155" x2="250.35" y2="125.64" />
+            <line class="radar-axis" x1="160" y1="155" x2="215.84" y2="231.86" />
+            <line class="radar-axis" x1="160" y1="155" x2="104.16" y2="231.86" />
+            <line class="radar-axis" x1="160" y1="155" x2="69.65" y2="125.64" />
+
+            <polygon class="radar-data" points="160,71.4 236.8,130.0 212.5,227.2 114.2,218.0 78.7,128.6" />
+
+            <circle class="radar-point" cx="160" cy="71.4" r="4.2" />
+            <circle class="radar-point" cx="236.8" cy="130.0" r="4.2" />
+            <circle class="radar-point" cx="212.5" cy="227.2" r="4.2" />
+            <circle class="radar-point" cx="114.2" cy="218.0" r="4.2" />
+            <circle class="radar-point" cx="78.7" cy="128.6" r="4.2" />
+
+            <text class="radar-label" x="160" y="42" text-anchor="middle" data-i18n="radar_1">Backend &amp; APIs</text>
+            <text class="radar-label" x="260" y="124" text-anchor="start" data-i18n="radar_2">Databases/SQL</text>
+            <text class="radar-label" x="225" y="252" text-anchor="middle" data-i18n="radar_3">Digital Mfg/Tulip</text>
+            <text class="radar-label" x="95" y="252" text-anchor="middle" data-i18n="radar_4">Frontend/JS</text>
+            <text class="radar-label" x="60" y="124" text-anchor="end" data-i18n="radar_5">Systems Analysis</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-divider">
+        <span class="kunai-divider" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12L13 8L10 12L13 16L21 12Z"/>
+            <path d="M10 12H5"/>
+            <circle cx="3.5" cy="12" r="1.5"/>
+          </svg>
+        </span>
+        <span class="section-tag">04</span>
+        <h2 class="section-heading" data-i18n="sec_education">Education &amp; Certifications</h2>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu-card">
+          <div>
+            <span class="bento-label" data-i18n="edu_label">University Degree</span>
+            <h3 class="edu-degree" style="margin-top: 0.65rem;" data-i18n="edu_degree">B.S. in Information Systems</h3>
+            <p class="edu-school">Universidad Adventista de las Antillas · Mayagüez, PR</p>
+          </div>
+          <div>
+            <span class="edu-date" data-i18n="edu_date">Graduated: May 2026</span>
+          </div>
+        </article>
+
+        <div class="certs-list">
+          <div class="cert-item">
+            <div>
+              <h4 class="cert-name">Tulip Advanced App Certified Builder</h4>
+              <p class="cert-issuer" data-i18n="cert1_issuer">Tulip Interfaces · Digital Manufacturing</p>
+            </div>
+            <span class="cert-badge verified" data-i18n="badge_certified">Certified</span>
+          </div>
+
+          <div class="cert-item">
+            <div>
+              <h4 class="cert-name">AI Fundamentals 2026 Certification</h4>
+              <p class="cert-issuer" data-i18n="cert2_issuer">Artificial Intelligence &amp; Applied Systems</p>
+            </div>
+            <span class="cert-badge verified" data-i18n="badge_certified">Certified</span>
+          </div>
+
+          <div class="cert-item">
+            <div>
+              <h4 class="cert-name">Udemy JavaScript Certification</h4>
+              <p class="cert-issuer" data-i18n="cert3_issuer">Modern JavaScript &amp; Web Architecture</p>
+            </div>
+            <span class="cert-badge in-progress" data-i18n="badge_in_progress">In-Progress</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-divider">
+        <span class="kunai-divider" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12L13 8L10 12L13 16L21 12Z"/>
+            <path d="M10 12H5"/>
+            <circle cx="3.5" cy="12" r="1.5"/>
+          </svg>
+        </span>
+        <span class="section-tag">05</span>
+        <h2 class="section-heading" data-i18n-mode="sec_contact">Summon / Contact</h2>
+      </div>
+
+      <div class="contact-card">
+        <h3 class="contact-headline" data-i18n="contact_headline">Let’s build something reliable.</h3>
+        <p class="contact-sub" data-i18n="contact_sub">
+          Open to full-stack web development, digital manufacturing (Tulip), and information systems opportunities. Reach out directly via email or explore my code on GitHub.
+        </p>
+
+        <div class="contact-actions">
+          <button class="btn btn-primary copy-email-btn" data-i18n="btn_copy_email_full">
+            Copy Email (ValentincabanYadielo@gmail.com)
+          </button>
+          <a href="https://github.com/Yadyvc" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span>GitHub</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="contact-meta">
+          <span>📍 Añasco, Puerto Rico</span>
+          <span>📞 787-598-4826</span>
+          <span>✉️ ValentincabanYadielo@gmail.com</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Yadiel O. Valentín Cabán</p>
+      <p class="footer-hint">
+        <span data-i18n="footer_hint_pre">Press</span>
+        <span class="footer-kbd">Ctrl + K</span>
+        <span data-i18n="footer_hint_post">for quick commands</span>
+      </p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 3L8 11L12 14L16 11L12 3Z"/>
+      <path d="M12 14V19"/>
+      <circle cx="12" cy="20.5" r="1.5"/>
+    </svg>
+  </button>
+
+  <div id="cmdBackdrop" class="cmd-backdrop" role="dialog" aria-modal="true" aria-labelledby="cmdInput">
+    <div class="cmd-modal">
+      <div class="cmd-input-wrap">
+        <svg class="cmd-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21L16.65 16.65"/>
+        </svg>
+        <input id="cmdInput" class="cmd-input" type="text" autocomplete="off" placeholder="Type a command or search... (try 'konoha' or 'chakra')" />
+        <span class="cmd-esc">ESC</span>
+      </div>
+      <div id="cmdList" class="cmd-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
