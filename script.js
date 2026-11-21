@@ -84,6 +84,7 @@
       cert1_issuer: "Tulip Interfaces · Digital Manufacturing",
       cert2_issuer: "Artificial Intelligence & Applied Systems",
       cert3_issuer: "Modern JavaScript & Web Architecture",
+      cert4_issuer: "Core 1 · IT Fundamentals",
       badge_certified: "Certified",
       badge_in_progress: "In-Progress",
 
@@ -174,6 +175,7 @@
       cert1_issuer: "Tulip Interfaces · Manufactura Digital",
       cert2_issuer: "Inteligencia Artificial y Sistemas Aplicados",
       cert3_issuer: "JavaScript Moderno y Arquitectura Web",
+      cert4_issuer: "Core 1 · Fundamentos de TI",
       badge_certified: "Certificado",
       badge_in_progress: "En Progreso",
 
